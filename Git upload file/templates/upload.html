@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Section</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e964b6;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .upload-container {
+      background-color: #70d4bb;
+      padding: 100px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      width: 300px;
+      text-align: center;
+    }
+    .upload-container input[type="file"] {
+      margin-bottom: 10px;
+    }
+    .upload-container button {
+      background-color: #007bff;
+      color: yellow;
+      padding: 10px 30px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+  <div class="upload-container">
+    <h1>Upload section</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="comment">Select File From Desktop:</label>
+        <input type="file" name="file"><br>
+        <label for="comment">Comment:</label>
+        <input type="text" id="comment" name="comment" required><br><br>
+        <input type="submit" value="Upload">
+    </form>
+  </div>
+</body>
+</html>
